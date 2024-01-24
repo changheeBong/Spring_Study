@@ -33,7 +33,7 @@ StringHttpMessageConverter가 사용되고, 객체인 경우에는 MappingJackso
 조합해 적합한 HttpMessageConverter를 선택하여 이를 처리합니다. MessageConverter가 동작하는 시점은 HandlerAdapter와 Controller가
 요청을 주고 받는 시점이다.
      
-### @RestController 이해하기
+### 2. @RestController 이해하기
 * [ RestController ]
 @RestController는 @Controller에 @ResponseBody가 추가된 것입니다. 당연하게도 RestController의 주용도는 Json 형태로 객체 데이터를
 반환하는 것입니다. 최근에 데이터를 응답으로 제공하는 REST API를 개발할 때 주로 사용하며 객체를 ResponseEntity로 감싸서 반환합니다.

@@ -1,25 +1,24 @@
-
-Stream 정의
-스트림(Stream) API 이란?
+### Stream 정의
+* 스트림(Stream) API 이란?
  - 스트림(Stream) API은 람다식(Lambda Expression)를 이용한 기술 중에 하나로 데이터 소스(컬렉션, 배열, 난수, 파일 등...)를 조작 및 가공, 변환하여 원하는 값으로 반환해주는
 인터페이스를 의미합니다.
  - 해당 기능을 사용하기 위해서는 Java 1.8이상의 버전을 사용해야 합니다.
  - 해당 스트림 인터페이스는 import java.util.stream 에 포함되어 있습니다.
 
- 람다식 (Lambda Expression) 이란?
+람다식 (Lambda Expression) 이란?
  - 함수를 하나의 식으로 표현한 함수형 인터페이스로 함수를 람다식으로 표현을 하면 메소드의 이름이 없기 때문에 익명 함수(Anonymous Function)의 한 종류라고도 합니다.
 
- 컬렉션 프레임워크 란?
+컬렉션 프레임워크 란?
  - 컬렉션 프레임워크는 프레임워크 내에 Collection(List, Set), Queue, Map의 인터페이스로 구성이 되어 있는 프레임워크를 의미합니다.
  - 해당 기능을 사용하기 위해서는 Java 1.2 이상의 버전을 사용해야 합니다.
  - 해당 컬렉션 프레임워크는 import java.util 내에 포함이 되어 있습니다.
 
- 컬렉션 인터페이스 내의 클래스 종류
+컬렉션 인터페이스 내의 클래스 종류
  - List 인터페이스에는 컬렉션 클래스로 ArrayList, Vector, Stack, LinkedList가 있습니다.
  - Map 인터페이스에는 컬렉션 클래스로는 HashMap, TreeMap, LinkedHashMap가 있습니다.
  - Set 인터페이스에는 컬렉션 클래스로는 HashSet, TreeSet, LinkedHashSet 가 있습니다.
 
- Stream 타입 별 객체의 종류
+Stream 타입 별 객체의 종류
 분류	    타입	    Stream Type
 정수형	byte	Stream<Byte>
 정수형	short	Stream<Short>

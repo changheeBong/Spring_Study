@@ -1,8 +1,8 @@
 
-Request
-클라이언트가 서버에게 연락하는 것을 요청이라고 하며, 요청을 보낼 때는 요청에 대한 정보를 담아 서버로 보낸다.
-- Request Method(요청의 종류)
-GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, OPTION, CONNECT 등이 있다.
+## Request
+#### 클라이언트가 서버에게 연락하는 것을 요청이라고 하며, 요청을 보낼 때는 요청에 대한 정보를 담아 서버로 보낸다.
+- Request Method(요청의 종류) 
+  - GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, OPTION, CONNECT 등이 있다.
  1. GET
    - 리소스를 검색하고, 반환받기 위해 사용되는 메소드
    - 원하는 정보를 서버에 요청할 때 쓰임

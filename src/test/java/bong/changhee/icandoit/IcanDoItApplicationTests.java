@@ -1,12 +1,10 @@
-package com.example.demo;
+package bong.changhee.icandoit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
-
 @SpringBootTest
-class DemoApplicationTests {
+class IcanDoItApplicationTests {
 
 	@Test
 	void contextLoads() {

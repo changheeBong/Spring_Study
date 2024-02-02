@@ -70,8 +70,8 @@ execution(접근지정자 (생략가능) 리턴타입 패키지명.클래스명.
  - execution( * set*(*,*))            : 모든 set으로 시작하는 메서드들 중 매개변수가 두개 선언한 것
  - execution( * set*(Integer, *))     : 모든 set으로 시작하는 메서드들 중 매개변수가 두개 선언한것, 첫번째는 Integer
  - execution( * set*(..))             : 모든 set으로 시작하는 메서드들 중 매개변수가 0개 이상 상관 X
- - execution( * com.example.cobi.service.*.*()) :
- - execution( * com.example.cobi.api.service.*.*()) :
+ - execution( * com.changhee.cobi.service.*.*()) :
+ - execution( * com.changhee.cobi.api.service.*.*()) :
  - execution( * set*() || execution(* set*(*))) :
  - execution( * set*() && execution(* set*(*)))
 ```
@@ -110,12 +110,12 @@ Spring에서 AOP를 적용하는 코드를 예시로 확인해보자.
 @Aspect
 @Component
 public class LoggingAspect{
-    @Before("execution(* com.example.cobi.service.*.*(..))")
+    @Before("execution(* com.changhee.cobi.service.*.*(..))")
     public void beforeMethodExecution(JoinPoint joinPoint){
         log.info("Before executing method: {} ", joinPoint.getSignature().toShortString());
     }
     
-    @AfterReturning(pointcut = "execution(* com.example.cobi.api.service.*.*(..))", returning = "result")
+    @AfterReturning(pointcut = "execution(* com.changhee.cobi.api.service.*.*(..))", returning = "result")
     public void afterMethodExecution(JoinPoint, Object result){
         log.info("After executing method: {}. Result: {}", joinPoint.getSignature().toshortString(), result);
     }

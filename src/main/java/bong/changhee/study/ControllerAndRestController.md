@@ -5,9 +5,9 @@
 * HTTP ResponseBody가 생성되는 방식입니다. 이번에는 2가지 어노테이션의 차이와 사용법에 대해 알아보도록 하겠습니다.
 
 ### 1. @Controller 이해하기
-*  [ Controller로 View 반환하기 ]
-전통적인 Spring MVC의 컨트롤러인 @Controller는 주로 View를 반환하기 위해 사용합니다. 아래와 같은 과정을 통해
-Spring MVC Container는 Client의 요청으로부터 View를 반환합니다.
+*  [ Controller로 View 반환하기 ] <br>
+전통적인 Spring MVC의 컨트롤러인 @Controller는 주로 View를 반환하기 위해 사용합니다. <br>
+아래와 같은 과정을 통해 Spring MVC Container는 Client의 요청으로부터 View를 반환합니다.
 1) Client는 URI형식으로 웹 서비스에 요청을 보낸다.
 2) DispatcherServlet이 요청을 처리할 대상을 찾는다.
 3) HandlerAdapter을 통해 요청을 Controller로 위임한다.
@@ -16,9 +16,10 @@ Spring MVC Container는 Client의 요청으로부터 View를 반환합니다.
      
 Controller가 반환한 뷰의 이름으로부터 View를 렌더링하기 위해서는 ViewResolver가 사용되며, ViewResolver 설정에 맞게 View를 찾아 렌더링합니다.
      
-*  [ Controller로 Data 반환하기 ]
-하지만 Spring MVC의 컨트롤러를 사용하면서 Data를 반환해야 하는 경우도 있습니다. 컨트롤러에서는 데이터를 반환하기 위해
-@ResponseBody 어노테이션을 활용해주어야 합니다. 이를 통해 Controller도 Json 형태로 데이터를 반환 할 수 있습니다.
+*  [ Controller로 Data 반환하기 ] <br>
+하지만 Spring MVC의 컨트롤러를 사용하면서 Data를 반환해야 하는 경우도 있습니다. <br>
+컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody 어노테이션을 활용해주어야 합니다. <br>
+이를 통해 Controller도 Json 형태로 데이터를 반환 할 수 있습니다.
 1) Client는 URI 형식으로 웹서비스에 요청을 보낸다.
 2) DispatcherServlet이 요청을 처리할 대상을 찾는다.
 3) HandlerAdapter을 통해 요청을 Controller로 위임한다.
@@ -36,7 +37,7 @@ Spring은 클라이언트의 HTTP Accept 헤더와 서버의 컨트롤러 반환
 MessageConverter가 동작하는 시점은 HandlerAdapter와 Controller가 요청을 주고 받는 시점이다.
      
 ### 2. @RestController 이해하기
-* [ RestController ]
+* [ RestController ] <br>
 @RestController는 @Controller에 @ResponseBody가 추가된 것입니다. <br>
 당연하게도 RestController의 주용도는 Json 형태로 객체 데이터를 반환하는 것입니다. <br>
 최근에 데이터를 응답으로 제공하는 REST API를 개발할 때 주로 사용하며 객체를 ResponseEntity로 감싸서 반환합니다. <br>

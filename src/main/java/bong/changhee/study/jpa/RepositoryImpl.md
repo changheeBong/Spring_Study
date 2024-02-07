@@ -15,7 +15,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ```
 현재 OrderRepository가 사용 중인 정적 쿼리(JPQL)들을 QueryDSL로 교체하려 한다.  <br>
 
-SPring Data JPA는 JpaRepository를 상속한 Repository 클래스에서 Custom Repository 기능을 사용할 수 있도록 
+Spring Data JPA는 JpaRepository를 상속한 Repository 클래스에서 Custom Repository 기능을 사용할 수 있도록 
 하는 기능을 제공한다.
 
 이를 RepositoryImpl에 추가하여 사용하면 JPA와 Spring Data JPA의 편리함과 장점을 그대로 유지하면서도 쿼리 작성에 더 많은

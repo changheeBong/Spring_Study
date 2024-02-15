@@ -26,7 +26,7 @@ OAuth2.0
 #### Oauth 동작방식
 ***
 Oauth 동작 방식은 JWT와 밀접한 관련이 있는 권한 부여 토큰 기반 인증 방식이다.
-[JWT]
+[JWT][https://github.com/changheeBong/Study_SpringAndJava/blob/d6d20f6e2251802a99aa42a9da2622174a86fc26/src/main/java/bong/changhee/study/network/JWT.md]
 1. 서드파티 애플리케이션은 사용자에게 인증 요청을 보낼 수 있는 권한을 얻기 위해 인증 서비스 제공자(예: 페이스북, 구글)와
 사전에 등록된 클라이언트 ID와 비밀 키를 사용하여 등록
 2. 서드파티 애플리케이션을 통해 로그인하거나 인증을 요청

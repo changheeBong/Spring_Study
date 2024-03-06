@@ -95,7 +95,7 @@ JSON 데이터를 생성하고 가공하는 방법은 다양합니다. 여기에
 JavaScript 에서 JSON 데이터를 생성하는 가장 간단한 방법은 객체 리터럴을 사용하는 것입니다. <br>
 객체 리터럴은 중괄호 ({})안에 키-값 쌍으로 데이터를 정의하는 방법입니다.
 `ver person = {"name":"John","age":30,"city":"New York"};`
-
+   
 2. JSON.stringify() 사용하기
 JavaScript에서는 JSON.stringfy() 함수를 사용하여 객체를 JSON 문자열로 변환할 수 있습니다. <br>
 예를 들어:
